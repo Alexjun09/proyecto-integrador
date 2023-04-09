@@ -2,7 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import logo from "../../public/logo.jpg";
+import logo from "../../public/logo.png";
+import mark from "../../public/mark.png";
+import lognombre from "../../public/logoNombre.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,27 +19,80 @@ export default function Home() {
       </Head>
       <header className="flex flex-row p-4">
         <Image alt="logo" src={logo} height={80} />
-        <div className="flex flex-row text-secondary text-2xl ml-10 mt-2">
-          <div className="flex gap-10">
-            <button className="bg-main rounded-3xl px-3 h-14">
+        <div className="w-full grid grid-cols-2  mt-6 mx-10 text-2xl">
+          <nav className="flex flex-row gap-10 text-white">
+            <button className="hover:bg-main hover:text-secondary rounded-3xl px-3 h-12">
               <a href="">Sobre nosotros</a>
             </button>
-            <button className="bg-main rounded-3xl px-3 h-14">
+            <button className="hover:bg-main hover:text-secondary rounded-3xl px-3 h-12">
               <a href="">Quienes Somos</a>
             </button>
-            <button className="bg-main rounded-3xl px-3 h-14">
+            <button className="hover:bg-main hover:text-secondary rounded-3xl px-3 h-12">
               <a href=""></a>Tutorial
             </button>
-            <button className="bg-main rounded-3xl px-3 h-14">
+            <button className="hover:bg-main hover:text-secondary rounded-3xl px-3 h-12">
               <a href=""></a>Contacto
             </button>
+          </nav>
+          <div className="">
+            <button className="bg-white text-secondary hover:bg-main rounded-3xl h-12 px-10">
+              <a href="">
+                <b>App</b>
+              </a>
+            </button>
           </div>
-          <button className="text-main bg-white rounded-3xl h-14 px-3 ml">
-            <a href="">App</a>
-          </button>
         </div>
       </header>
-      <main></main>
+      <main>
+        <hr className="border-main" />
+        <div className="flex flex-row m-40">
+          <div className="flex flex-col gap-4 text-7xl">
+            <p className="text-white">El futuro de las</p>
+            <p className="text-white">
+              <span className="text-main">Aplicaciones</span> de
+            </p>
+            <p className="text-white">
+              <span className="text-main">Gestion</span> de
+            </p>
+            <p className="text-main">Proyectos</p>
+            <p className="text-white">ha legado</p>
+          </div>
+          <div className="ml-40 -mt-6">
+            <Image src={mark} alt="mark" height={550} />
+          </div>
+        </div>
+      </main>
+      <footer className="h-[270px] bg-secondary text-white">
+        <div className="flex flex-row pt-10 gap-4 ml-24">
+          <hr className="border border-white w-[43%]" />
+          <Image
+            src={lognombre}
+            alt="nombre"
+            height={70}
+            className="text-center text-4xl -mt-6"
+          />
+          <hr className="border border-white w-[43%]" />
+        </div>
+        <div className="flex flex-row mx-44 text-main text-xl">
+          <div className="flex flex-col">
+            <p>
+              <a href="">Sobre Nosotros</a>
+            </p>
+            <p>
+              <a href="">Quienes Somos</a>
+            </p>
+            <p>
+              <a href="">Tutorial</a>
+            </p>
+            <p>
+              <a href="">Contacto</a>
+            </p>
+          </div>
+        </div>
+        <div className="mt-8">
+          <hr className="border w-[90%] border-white m-auto" />
+        </div>
+      </footer>
     </>
   );
 }
