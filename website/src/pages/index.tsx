@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import logo from "../../public/logo.png";
 import mark from "../../public/mark.png";
-import lognombre from "../../public/logoNombre.png";
+import name from "../../public/name.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +18,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="flex flex-row p-4">
-        <Image alt="logo" src={logo} height={80} />
-        <div className="w-full grid grid-cols-2  mt-6 mx-10 text-2xl">
-          <nav className="flex flex-row gap-10 text-white">
+        <a href="" className="">
+          <Image alt="logo" src={logo} height={100}/>
+        </a>
+        <div className="grid grid-cols-3 w-full   mt-6 mx-10 text-2xl">
+          <nav className="col-span-2  flex flex-row gap-10 text-white">
             <button className="hover:bg-main hover:text-secondary rounded-3xl px-3 h-12">
               <a href="">Sobre nosotros</a>
             </button>
@@ -34,7 +36,7 @@ export default function Home() {
               <a href=""></a>Contacto
             </button>
           </nav>
-          <div className="">
+          <div className="grid grid-cols-1 justify-items-end">
             <button className="bg-white text-secondary hover:bg-main rounded-3xl h-12 px-10">
               <a href="">
                 <b>App</b>
@@ -66,7 +68,7 @@ export default function Home() {
         <div className="flex flex-row pt-10 gap-4 ml-24">
           <hr className="border border-white w-[43%]" />
           <Image
-            src={lognombre}
+            src={name}
             alt="nombre"
             height={70}
             className="text-center text-4xl -mt-6"
