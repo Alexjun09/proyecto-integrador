@@ -50,8 +50,8 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center ">
           <Link
-            className="bg-main p-5 px-20 text-4xl rounded-full"
-            href={"/app"}
+            className="bg-main p-5 px-20 text-4xl rounded-full hover:bg-white hover:text-main"
+            href={"/signin"}
           >
             <b>App</b>
           </Link>

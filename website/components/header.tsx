@@ -40,7 +40,7 @@ const Header = () => {
             </Link>
           </nav>
           <div className="grid grid-cols-1 justify-items-end">
-            <Link href={"/app"}>
+            <Link href={"/signin"}>
               <button className="bg-white text-secondary hover:bg-main rounded-3xl h-12 px-10">
                 <b>App</b>
               </button>
