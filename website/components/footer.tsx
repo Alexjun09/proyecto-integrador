@@ -17,15 +17,35 @@ const Footer = () => {
       </div>
       <div className="flex flex-row justify-around mx-44 text-white text-xl">
         <div className="flex flex-col my-8">
-          <Link href={"/sobrenosotros"}>Sobre Nosotros</Link>
-          <Link href={"/quienessomos"}>Quienes Somos</Link>
-          <Link href={"/tutorial"}>Tutorial</Link>
-          <Link href={"/contacto"}>Contacto</Link>
+          <Link
+            href={"/sobrenosotros"}
+            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main"
+          >
+            Sobre Nosotros
+          </Link>
+          <Link
+            href={"/quienessomos"}
+            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main"
+          >
+            Quienes Somos
+          </Link>
+          <Link
+            href={"/tutorial"}
+            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main"
+          >
+            Tutorial
+          </Link>
+          <Link
+            href={"/contacto"}
+            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main"
+          >
+            Contacto
+          </Link>
         </div>
         <div className="flex flex-row gap-7 items-center">
           <Link href={""} className="">
             <Image
-              className="align-bottom"
+              className=""
               src={twitter}
               alt="twitter"
               height={50}
