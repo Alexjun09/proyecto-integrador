@@ -17,8 +17,65 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>Formulario de Contacto</h1>
+      <main className="flex justify-center">
+        <form
+          action=""
+          className="bg-main rounded-3xl text-secondary  w-[30%] p-5 py-7 m-10 mt-24 mb-52 flex flex-col gap-4"
+        >
+          <div className="flex flex-col">
+            <label htmlFor="">Nombre</label>
+            <input
+              type="text"
+              className="bg-secondary text-white rounded-md px-2"
+              required
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="">Apellido</label>
+            <input
+              type="text"
+              className="bg-secondary text-white rounded-md px-2"
+              required
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="">Email</label>
+            <input
+              type="email"
+              className="bg-secondary text-white rounded-md px-2"
+              required
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="">Numero de Telefono</label>
+            <input
+              type="number"
+              className="bg-secondary text-white rounded-md px-2"
+              required
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="">Empresa</label>
+            <input
+              type="text"
+              className="bg-secondary text-white rounded-md px-2"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="">Mensaje</label>
+            <textarea
+              name=""
+              id=""
+              className="bg-secondary text-white rounded-md px-2"
+              required
+            >
+              Escribe aqui...
+            </textarea>
+          </div>
+          <div className="flex justify-center ">
+            <input type="submit" className="bg-white rounded-xl p-3 px-5" />
+          </div>
+        </form>
       </main>
     </>
   );
