@@ -17,10 +17,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex justify-center">
+      <main className="flex flex-col items-center">
+      <h1 className="text-main text-3xl mt-10">Formulario de Contacto</h1>
         <form
           action=""
-          className="bg-main rounded-3xl text-secondary  w-[30%] p-5 py-7 m-10 mt-24 mb-52 flex flex-col gap-4"
+          className="bg-main rounded-3xl text-secondary  w-[30%] p-5 pb-7 m-10 mt-5 mb-52 flex flex-col gap-4"
         >
           <div className="flex flex-col">
             <label htmlFor="">Nombre</label>
