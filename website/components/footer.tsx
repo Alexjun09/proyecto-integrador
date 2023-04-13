@@ -19,25 +19,25 @@ const Footer = () => {
         <div className="flex flex-col my-8">
           <Link
             href={"/sobrenosotros"}
-            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main"
+            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main hover:text-secondary"
           >
             Sobre Nosotros
           </Link>
           <Link
             href={"/quienessomos"}
-            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main"
+            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main hover:text-secondary"
           >
             Quienes Somos
           </Link>
           <Link
             href={"/tutorial"}
-            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main"
+            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main hover:text-secondary"
           >
             Tutorial
           </Link>
           <Link
             href={"/contacto"}
-            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main"
+            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main hover:text-secondary"
           >
             Contacto
           </Link>
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center ">
           <Link
-            className="bg-main p-5 px-20 text-4xl rounded-full hover:bg-white hover:text-main"
+            className="bg-white text-secondary p-5 px-20 text-4xl rounded-full hover:bg-main hover:text-secondary"
             href={"/signin"}
           >
             <b>App</b>

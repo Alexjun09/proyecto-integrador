@@ -17,8 +17,93 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>Quienes Somos</h1>
+      <main className="">
+        <div className="grid grid-cols-2 p-10">
+          <div className="flex flex-col items-center mx-10 mb-5 p-3 border border-main rounded-2xl">
+            <Image src={logo} height={100} alt={"foto"} />
+            <p className="text-white">
+              <span className="text-main">Nombre:</span> Daniel
+            </p>
+            <p className="text-white">
+              <span className="text-main">Apellido:</span> Herrero
+            </p>
+            <p className="text-white">
+              <span className="text-main">Edad:</span> 20
+            </p>
+            <p className="text-white">
+              <span className="text-main">Posicion:</span> Director
+            </p>
+            <p className="text-white">
+              <span className="text-main">Presentación:</span> Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Numquam at maiores itaque
+              ullam ratione debitis aperiam reprehenderit est delectus quisquam
+              nihil iusto porro unde, culpa in fugit placeat eum atque.
+            </p>
+          </div>
+          <div className="flex flex-col items-center mx-10 mb-5 p-3 border border-main rounded-2xl">
+            <Image src={logo} height={100} alt={"foto"} />
+            <p className="text-white">
+              <span className="text-main">Nombre:</span> Alejandro
+            </p>
+            <p className="text-white">
+              <span className="text-main">Apellido:</span> Junyent
+            </p>
+            <p className="text-white">
+              <span className="text-main">Edad:</span> 21
+            </p>
+            <p className="text-white">
+              <span className="text-main">Posicion:</span> Desarollador Web
+            </p>
+            <p className="text-white">
+              <span className="text-main">Presentación:</span> Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Numquam at maiores itaque
+              ullam ratione debitis aperiam reprehenderit est delectus quisquam
+              nihil iusto porro unde, culpa in fugit placeat eum atque.
+            </p>
+          </div>
+          <div className="flex flex-col items-center mx-10 mt-5 p-3 border border-main rounded-2xl">
+            <Image src={logo} height={100} alt={"foto"} />
+            <p className="text-white">
+              <span className="text-main">Nombre:</span> Aaron
+            </p>
+            <p className="text-white">
+              <span className="text-main">Apellido:</span> Escudero
+            </p>
+            <p className="text-white">
+              <span className="text-main">Edad:</span> 22
+            </p>
+            <p className="text-white">
+              <span className="text-main">Posicion:</span> Desarollador Java
+            </p>
+            <p className="text-white">
+              <span className="text-main">Presentación:</span> Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Numquam at maiores itaque
+              ullam ratione debitis aperiam reprehenderit est delectus quisquam
+              nihil iusto porro unde, culpa in fugit placeat eum atque.
+            </p>
+          </div>
+          <div className="flex flex-col items-center mx-10 mt-5 p-3 border border-main rounded-2xl">
+            <Image src={logo} height={100} alt={"foto"} />
+            <p className="text-white">
+              <span className="text-main">Nombre:</span> Javier
+            </p>
+            <p className="text-white">
+              <span className="text-main">Apellido:</span> Chicano
+            </p>
+            <p className="text-white">
+              <span className="text-main">Edad:</span> 20
+            </p>
+            <p className="text-white">
+              <span className="text-main">Posicion:</span> Ingeniero BBDD
+            </p>
+            <p className="text-white">
+              <span className="text-main">Presentación:</span> Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Numquam at maiores itaque
+              ullam ratione debitis aperiam reprehenderit est delectus quisquam
+              nihil iusto porro unde, culpa in fugit placeat eum atque.
+            </p>
+          </div>
+        </div>
       </main>
     </>
   );

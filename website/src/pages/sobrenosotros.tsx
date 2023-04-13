@@ -17,8 +17,45 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>Sobre nosotros</h1>
+      <main className="flex flex-row justify-center">
+        <div className="grid grid-cols-2 w-[60%] py-20 gap-16 text-white">
+          <div>
+            <Image src={mark} alt={"mark"} height={200} />
+          </div>
+          <div>
+            <h1 className="text-2xl text-main pb-2">El problema</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              nobis incidunt libero, maiores, veritatis omnis provident eos cum
+              distinctio autem reprehenderit numquam corrupti quod aperiam iste
+              animi in facilis quos.
+            </p>
+          </div>
+          <div>
+            <h1 className="text-2xl text-main pb-2">Como lo solucionamos</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              nobis incidunt libero, maiores, veritatis omnis provident eos cum
+              distinctio autem reprehenderit numquam corrupti quod aperiam iste
+              animi in facilis quos.
+            </p>
+          </div>
+          <div>
+            <Image src={mark} alt={"mark"} height={200} />
+          </div>
+          <div>
+            <Image src={mark} alt={"mark"} height={200} />
+          </div>
+          <div>
+            <h1 className="text-2xl text-main pb-2">El Objetivo</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              nobis incidunt libero, maiores, veritatis omnis provident eos cum
+              distinctio autem reprehenderit numquam corrupti quod aperiam iste
+              animi in facilis quos.
+            </p>
+          </div>
+        </div>
       </main>
     </>
   );
