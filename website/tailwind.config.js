@@ -16,16 +16,9 @@ module.exports = {
         mid: "00f2fe",
       },
       screens: {
-        'sm': '640px', //iphone
-  
-        'md': '768px', //ipad
-  
-        'lg': '1920px', //1080
-  
-        'xl': '2560px', //1440
-  
-        '2xl': '2560px', //mac book air
-      }
+        mac: "2560px",
+        normal: "1920",
+      },
     },
   },
   plugins: [require("daisyui")],

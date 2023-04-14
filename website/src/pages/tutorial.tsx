@@ -6,6 +6,7 @@ import logo from "../../public/logo.png";
 import mark from "../../public/mark.png";
 import name from "../../public/name.png";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       </Head>
       <main className="h-screen text-white">
         <h1 className="text-center">Tutorial</h1>
+        <Image src={logo} alt={"logo"} height={100} />
       </main>
     </>
   );

@@ -5,6 +5,8 @@ import styles from "@/styles/Home.module.css";
 import logo from "../../public/logo.png";
 import mark from "../../public/mark.png";
 import name from "../../public/name.png";
+import gif from "../../public/gif.gif";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="./favicon.ico" />
       </Head>
       <main>
-        <div className="flex flex-row my-48 ml-40">
+        <div className="flex flex-row my-40 ml-40">
           <div className="flex flex-col gap-4 text-7xl">
             <p className="text-white">El futuro de las</p>
             <p className="text-white">
@@ -39,7 +41,7 @@ export default function Home() {
             <p className="text-white">ha legado</p>
           </div>
           <div className="ml-28 -mt-6">
-            <Image src={mark} alt="mark" height={470} />
+            <Image src={gif} alt="mark" height={470} />
           </div>
         </div>
       </main>

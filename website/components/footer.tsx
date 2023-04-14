@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="">
         <hr className="border border-main w-[90%] m-auto" />
       </div>
-      <div className="flex flex-row justify-around mx-44 text-white text-xl">
+      <div className="flex flex-row justify-around mx-44 text-white text-xl gap-12">
         <div className="flex flex-col my-8">
           <Link
             href={"/sobrenosotros"}
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center ">
           <Link href={"/"}>
-            <Image src={name} alt="nombre" height={120} className="" />
+            <Image src={logo} alt="nombre" height={120} className="" />
           </Link>
         </div>
         <div className="flex flex-row gap-7 items-center">

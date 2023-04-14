@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <main className=" flex flex-row justify-center">
         <div className="w-[20%] flex flex-col justify-center">
-          <div className="text-secondary bg-main rounded-3xl h-[365px] mt-32 mb-96">
+          <div className="text-secondary bg-main rounded-3xl mt-32 mb-96">
             <h1 className="text-secondary m-4">
               <b>Crea una cuenta para acceder a la aplicación</b>
             </h1>
