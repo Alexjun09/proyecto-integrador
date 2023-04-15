@@ -17,7 +17,7 @@ module.exports = {
       },
       screens: {
         mac: "2560px",
-        normal: "1920",
+        normal: "1920px",
       },
     },
   },
