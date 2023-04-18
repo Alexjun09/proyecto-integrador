@@ -36,7 +36,7 @@ export default function Home() {
               de
             </p>
             <p className="text-main">
-              <i>Proyectos</i>
+              <i>Proyectoss</i>
             </p>
             <p className="text-white">ha legado</p>
           </div>
