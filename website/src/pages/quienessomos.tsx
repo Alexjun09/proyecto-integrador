@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className="grid grid-cols-2 p-10">
+        <div className="md:grid md:grid-cols-2 md:p-10 my-5">
           <div className="flex flex-col items-center mx-10 mb-5 p-3 border border-main rounded-2xl">
             <Image src={logo} height={100} alt={"foto"} />
             <p className="text-white">

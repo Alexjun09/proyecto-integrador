@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-row justify-center gap-10">
-        <div className="h-[650px] w-[200px] -ml-32 border border-main border-t-0 rounded-t-none rounded-full text-center text-white">
+        <div className="h-[650px] w-[200px] -ml-32 border border-main border-t-0 rounded-t-none rounded-full text-center text-white sm:hidden md:inline-block">
           <div className="my-14 px-3">
             <p className="text-main text-3xl mb-3">600</p>
             <p> Proyectos Intregardores Almacenados</p>
@@ -34,11 +34,11 @@ export default function Home() {
             <p>GBs almacenados de manera segura</p>
           </div>
         </div>
-        <div className="grid grid-cols-2 w-[60%] pl-10 py-10 gap-16 text-white">
-          <div>
+        <div className="md:grid md:grid-cols-2 md:w-[60%] md:pl-10 md:py-10 md:gap-16 text-white p-10">
+          <div className="sm:hidden md:inline-block">
             <Image src={mark} alt={"mark"} height={200} />
           </div>
-          <div>
+          <div className="">
             <h1 className="text-2xl text-main pb-2">El problema</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
@@ -47,7 +47,10 @@ export default function Home() {
               animi in facilis quos.
             </p>
           </div>
-          <div>
+          <div className="md:hidden mb-10">
+            <Image src={mark} alt={"mark"} height={200} />
+          </div>
+          <div className="">
             <h1 className="text-2xl text-main pb-2">Como lo solucionamos</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
@@ -56,13 +59,13 @@ export default function Home() {
               animi in facilis quos.
             </p>
           </div>
-          <div>
+          <div className="sm:hidden md:inline-block">
             <Image src={mark} alt={"mark"} height={200} />
           </div>
-          <div>
+          <div className="mb-10">
             <Image src={mark} alt={"mark"} height={200} />
           </div>
-          <div>
+          <div className="">
             <h1 className="text-2xl text-main pb-2">El Objetivo</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque

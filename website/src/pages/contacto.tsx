@@ -21,7 +21,7 @@ export default function Home() {
       <h1 className="text-main text-3xl mt-10">Formulario de Contacto</h1>
         <form
           action=""
-          className="bg-main rounded-3xl text-secondary  w-[30%] p-5 pb-7 m-10 mt-5 mb-52 flex flex-col gap-4"
+          className="bg-main rounded-3xl text-secondary sm:w-[80%] md:w-[30%] p-5 pb-7 md:m-10 mt-5 sm:mb-10 md:mb-52 flex flex-col gap-4"
         >
           <div className="flex flex-col">
             <label htmlFor="">Nombre</label>
