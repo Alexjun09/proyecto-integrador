@@ -9,15 +9,17 @@ import java.awt.event.ActionEvent;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
 
+import mvc.control.añadirHome;
+
+
 	public class home {
 	    private JFrame frame;
 	    private JPanel panel;
 	    private JButton button1;
-	    private JButton button2;
 	    private JButton button2_1;
-	    private JButton button3;
 	    private JButton button3_1;
-
+	    private altas a;
+	    
 	    public home() {
 	    	Toolkit toolkit = Toolkit.getDefaultToolkit();
 	        Dimension screenSize = toolkit.getScreenSize();
@@ -39,8 +41,6 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 	                super.paintComponent(g);
 	            }
 	        };
-	        button2 = new JButton("Añadir");
-	        button3 = new JButton("Consultar");
 	        	        ImageIcon imagenHome = new ImageIcon("Imagenes/home.png");
 	        	        Image resizedImage = imagenHome.getImage().getScaledInstance(60, 60, Image.SCALE_SMOOTH);
 	        	        ImageIcon imagenAdd = new ImageIcon("Imagenes/mas.png");
@@ -63,6 +63,8 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 	        	        button2_1.setContentAreaFilled(false);
 	        	        button2_1.setFocusPainted(false);
 	        	        button2_1.setOpaque(false);
+	        	        altas a =  new altas(this);
+	        	        setControlador(a);
 	        	        
 	        			
 	        	        
@@ -79,9 +81,14 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 	        panel.add(button1);
 	        panel.add(button2_1);
 	        panel.add(button3_1);
-	        frame.setVisible(true);
+	        
 	    }
-
+	    public void hacerVisible() {
+	    	frame.setVisible(true);
+		}
+		public void dispose() {
+			frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
+		}
 	    public JButton getButton1() {
 	        return button1;
 	    }
@@ -93,5 +100,11 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 	    public JButton getButton3() {
 	        return button3_1;
 	    }
+	  //Metodo que crea un nuevo controlador
+		public void setControlador(altas x) {
+			añadirHome escuchador = new añadirHome();
+			escuchador.setVentanaUsuario(this, x);
+			button2_1.addActionListener(escuchador);
+		}
 	}
 
