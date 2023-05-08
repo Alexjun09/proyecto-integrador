@@ -4,7 +4,7 @@ import mvc.vistas.*;
 public class Main {
     public static void main(String[] args) {
       
-       home vistaHome =new home();
+       //home vistaHome =new home();
        //altas vistAltas = new altas();
        //altasAlumnos vistAltasAlumnos = new altasAlumnos();
        //altasAreas vistAltasAreas = new altasAreas();
@@ -15,6 +15,7 @@ public class Main {
        //buscarPI vistaBuscarPI = new buscarPI();
        //consultaAlumnos vistAlumnos = new consultaAlumnos();
        //consultaAreas vistAreas = new consultaAreas();
+    	consultaPI vistaConsultaPI = new consultaPI();
     	
     }       
 }
