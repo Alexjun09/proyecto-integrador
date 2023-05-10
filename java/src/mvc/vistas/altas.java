@@ -9,8 +9,9 @@ import java.awt.event.ActionEvent;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
 
+import mvc.control.altasConsultas;
 import mvc.control.altasHome;
-import mvc.control.añadirHome;
+import mvc.control.homeAñadir;
 
 public class altas {
 	private JFrame frame;
@@ -25,11 +26,11 @@ public class altas {
 	private JLabel lblNewLabel_2;
 	private JLabel lblNewLabel_3;
 	
-	private home a;
-
-	public altas(home alta) {
-		this.a = alta;
-
+	private home h;
+	private consultas c;
+	public altas() {
+//		this.h = home;
+//		this.c = consulta;
 		///////////////////// MENÚ Y FONDO/////////////////////////////77
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
 		Dimension screenSize = toolkit.getScreenSize();
@@ -66,8 +67,7 @@ public class altas {
 		button1.setContentAreaFilled(false);
 		button1.setFocusPainted(false);
 		button1.setOpaque(false);
-		//boton que vuelve a home
-	    setControlador(a);
+		
 
 	        
 		button2 = new JButton("");
@@ -85,6 +85,7 @@ public class altas {
 		button3.setContentAreaFilled(false);
 		button3.setFocusPainted(false);
 		button3.setOpaque(false);
+		
 
 		frame.setContentPane(panel);
 		panel.setLayout(null);
@@ -163,6 +164,12 @@ public class altas {
 		escuchador.setVentanaUsuario(x, this);
 		button1.addActionListener(escuchador);
 	}
+	//Metodo que crea un nuevo controlador
+	public void setControlador2(consultas x) {
+		altasConsultas escuchador = new altasConsultas();
+		escuchador.setVentanaUsuario(this, x);
+		button3.addActionListener(escuchador);
+	}
 	public JButton getButton1() {
 		return button1;
 	}
@@ -173,5 +180,15 @@ public class altas {
 
 	public JButton getButton3() {
 		return button3;
+	}
+	public void setHome(home home) {
+		h=home;
+		//boton que vuelve a home
+	    setControlador(h);
+	}
+	public void setConsultas(consultas con) {
+		c=con;
+		//boton que va a consultas
+		setControlador2(c);
 	}
 }

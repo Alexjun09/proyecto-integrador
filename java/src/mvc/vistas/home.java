@@ -9,7 +9,8 @@ import java.awt.event.ActionEvent;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
 
-import mvc.control.añadirHome;
+import mvc.control.homeConsultas;
+import mvc.control.homeAñadir;
 
 
 	public class home {
@@ -19,8 +20,13 @@ import mvc.control.añadirHome;
 	    private JButton button2_1;
 	    private JButton button3_1;
 	    private altas a;
+	    private consultas c;
 	    
 	    public home() {
+	    	//Creacion de clases
+	    	
+	    	
+	    	
 	    	Toolkit toolkit = Toolkit.getDefaultToolkit();
 	        Dimension screenSize = toolkit.getScreenSize();
 	        
@@ -63,8 +69,7 @@ import mvc.control.añadirHome;
 	        	        button2_1.setContentAreaFilled(false);
 	        	        button2_1.setFocusPainted(false);
 	        	        button2_1.setOpaque(false);
-	        	        altas a =  new altas(this);
-	        	        setControlador(a);
+
 	        	        
 	        			
 	        	        
@@ -75,6 +80,7 @@ import mvc.control.añadirHome;
 	        	        button3_1.setContentAreaFilled(false);
 	        	        button3_1.setFocusPainted(false);
 	        	        button3_1.setOpaque(false);
+
 
 	        frame.setContentPane(panel);
 	        panel.setLayout(null);
@@ -87,7 +93,7 @@ import mvc.control.añadirHome;
 	    	frame.setVisible(true);
 		}
 		public void dispose() {
-			frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
+			frame.setVisible(false);
 		}
 	    public JButton getButton1() {
 	        return button1;
@@ -100,11 +106,28 @@ import mvc.control.añadirHome;
 	    public JButton getButton3() {
 	        return button3_1;
 	    }
-	  //Metodo que crea un nuevo controlador
-		public void setControlador(altas x) {
-			añadirHome escuchador = new añadirHome();
+	    //Metodo que crea un nuevo controlador
+		public void setControlador1(altas x) {
+			homeAñadir escuchador = new homeAñadir();
 			escuchador.setVentanaUsuario(this, x);
 			button2_1.addActionListener(escuchador);
 		}
-	}
+		//Metodo que crea un nuevo controlador
+		public void setControlador2(consultas x) {
+			homeConsultas escuchador2 = new homeConsultas();
+			escuchador2.setVentanaUsuario(this, x);
+			button3_1.addActionListener(escuchador2);
+		}
+		
+		public void setAltas(altas altas) {
+			a=altas;
+	        //Boton que va a altas
+	        setControlador1(a);
+		}
+		public void setConsultas(consultas con) {
+			c=con;
+	        //Boton que va a consultas
+	        setControlador2(c);
+		}
+}
 

@@ -9,6 +9,10 @@ import java.awt.event.ActionEvent;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
 
+import mvc.control.altasHome;
+import mvc.control.consultasAltas;
+import mvc.control.consultasHome;
+
 public class consultas {
 	private JFrame frame;
 	private JPanel panel;
@@ -22,8 +26,11 @@ public class consultas {
 	private JLabel lblNewLabel_2;
 	private JLabel lblNewLabel_3;
 
+	private home h;
+	private altas a;
+	
 	public consultas() {
-
+		//this.h = home;
 		///////////////////// MENÚ Y FONDO/////////////////////////////77
 		Toolkit toolkit = Toolkit.getDefaultToolkit();
 		Dimension screenSize = toolkit.getScreenSize();
@@ -60,6 +67,7 @@ public class consultas {
 		button1.setContentAreaFilled(false);
 		button1.setFocusPainted(false);
 		button1.setOpaque(false);
+		
 
 		button2 = new JButton("");
 		button2.setBorderPainted(false);
@@ -68,6 +76,7 @@ public class consultas {
 		button2.setContentAreaFilled(false);
 		button2.setFocusPainted(false);
 		button2.setOpaque(false);
+		
 
 		button3 = new JButton("");
 		button3.setBorderPainted(false);
@@ -141,7 +150,24 @@ public class consultas {
 		frame.setVisible(true);
 
 	}
-
+	public void hacerVisible() {
+    	frame.setVisible(true);
+	}
+	public void dispose() {
+		frame.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
+	}
+	//Metodo que crea un nuevo controlador
+	public void setControlador(home x) {
+		consultasHome escuchador = new consultasHome();
+		escuchador.setVentanaUsuario(x, this);
+		button1.addActionListener(escuchador);
+	}
+	//Metodo que crea un nuevo controlador
+	public void setControlador2(altas x) {
+		consultasAltas escuchador = new consultasAltas();
+		escuchador.setVentanaUsuario(x, this);
+		button2.addActionListener(escuchador);
+	}
 	public JButton getButton1() {
 		return button1;
 	}
@@ -152,5 +178,15 @@ public class consultas {
 
 	public JButton getButton3() {
 		return button3;
+	}
+	public void setAltas(altas altas) {
+		a=altas;
+		//boton que va a altas
+		setControlador2(a);
+	}
+	public void setHome(home home) {
+		h=home;
+		//boton que vuelve a home
+	    setControlador(h);
 	}
 }

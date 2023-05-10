@@ -22,6 +22,22 @@ public class Main {
 		public void run() {
    				
 			home vistaHome = new home();
+			consultas co =  new consultas();
+	    	altas al =  new altas();
+	    	
+	    	//Seteo de los botones de la vista principal
+	    	vistaHome.setAltas(al);
+	    	vistaHome.setConsultas(co);
+	    	
+	    	//Seteo de los botones de la vista Consultas
+	    	co.setAltas(al);
+	    	co.setHome(vistaHome);
+	    	
+	    	//Seteo de los botones de la vista Altas
+	    	al.setConsultas(co);
+	    	al.setHome(vistaHome);
+	    	
+	    	
    			vistaHome.hacerVisible();
    				
    			}
