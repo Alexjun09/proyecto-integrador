@@ -5,6 +5,5 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="mvc/vista/" kind="src" path="java/src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
