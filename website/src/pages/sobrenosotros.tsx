@@ -41,10 +41,16 @@ export default function Home() {
           <div className="">
             <h1 className="text-2xl text-main pb-2">El problema</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              nobis incidunt libero, maiores, veritatis omnis provident eos cum
-              distinctio autem reprehenderit numquam corrupti quod aperiam iste
-              animi in facilis quos.
+              El problema que gLabs intenta solucionar es la necesidad de las
+              empresas de adaptarse y aprovechar las oportunidades que ofrece la
+              era digital. Muchas organizaciones se enfrentan a desafíos como la
+              automatización de procesos, la gestión y análisis eficiente de
+              grandes volúmenes de datos, la integración de sistemas heredados,
+              la seguridad de la información y la optimización de la experiencia
+              del cliente, entre otros. Estos desafíos pueden obstaculizar el
+              crecimiento y la eficiencia de las empresas, así como su capacidad
+              para mantenerse competitivas en un entorno empresarial en
+              constante evolución.
             </p>
           </div>
           <div className="md:hidden mb-10">
@@ -53,10 +59,11 @@ export default function Home() {
           <div className="">
             <h1 className="text-2xl text-main pb-2">Como lo solucionamos</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              nobis incidunt libero, maiores, veritatis omnis provident eos cum
-              distinctio autem reprehenderit numquam corrupti quod aperiam iste
-              animi in facilis quos.
+              gLabs soluciona los problemas empresariales utilizando un enfoque
+              personalizado, tecnologías avanzadas y una comprensión profunda de
+              las necesidades y objetivos de nuestros clientes. Nuestro objetivo
+              es brindar soluciones efectivas que impulsen el crecimiento, la
+              eficiencia y la competitividad de las empresas en la era digital.
             </p>
           </div>
           <div className="sm:hidden md:inline-block">
@@ -68,10 +75,19 @@ export default function Home() {
           <div className="">
             <h1 className="text-2xl text-main pb-2">El Objetivo</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              nobis incidunt libero, maiores, veritatis omnis provident eos cum
-              distinctio autem reprehenderit numquam corrupti quod aperiam iste
-              animi in facilis quos.
+              El objetivo de gLabs es desarrollar soluciones innovadoras y
+              tecnológicas que impulsen el crecimiento y el éxito de nuestros
+              clientes. Nuestro enfoque se centra en brindar servicios de
+              consultoría, desarrollo de software y soluciones personalizadas
+              que ayuden a las empresas a optimizar sus operaciones, mejorar su
+              eficiencia y obtener una ventaja competitiva en el mercado.
+              Buscamos ser líderes en la creación de soluciones disruptivas y
+              vanguardistas que aborden los desafíos empresariales actuales y
+              futuros, utilizando tecnologías avanzadas como inteligencia
+              artificial, análisis de datos, Internet de las cosas (IoT) y
+              blockchain. Nuestro objetivo final es ser un socio confiable y de
+              confianza para nuestros clientes, brindándoles soluciones que
+              impulsen su crecimiento y éxito en la era digital.
             </p>
           </div>
         </div>

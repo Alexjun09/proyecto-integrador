@@ -34,10 +34,13 @@ export default function Home() {
               <span className="text-main">Posicion:</span> Director
             </p>
             <p className="text-white">
-              <span className="text-main">Presentación:</span> Lorem ipsum dolor
-              sit amet, consectetur adipisicing elit. Numquam at maiores itaque
-              ullam ratione debitis aperiam reprehenderit est delectus quisquam
-              nihil iusto porro unde, culpa in fugit placeat eum atque.
+              <span className="text-main">Presentación:</span> Daniel es el
+              director de gLabs, un líder apasionado y visionario en el ámbito
+              de la tecnología y la innovación empresarial. Con una amplia
+              experiencia en el sector, Daniel se destaca por su sólido
+              conocimiento de las últimas tendencias tecnológicas y su capacidad
+              para aplicarlas de manera estratégica para resolver los desafíos
+              empresariales.
             </p>
           </div>
           <div className="flex flex-col items-center mx-10 mb-5 p-3 border border-main rounded-2xl">
@@ -55,10 +58,13 @@ export default function Home() {
               <span className="text-main">Posicion:</span> Desarollador Web
             </p>
             <p className="text-white">
-              <span className="text-main">Presentación:</span> Lorem ipsum dolor
-              sit amet, consectetur adipisicing elit. Numquam at maiores itaque
-              ullam ratione debitis aperiam reprehenderit est delectus quisquam
-              nihil iusto porro unde, culpa in fugit placeat eum atque.
+              <span className="text-main">Presentación:</span> Alex es un
+              talentoso desarrollador web en gLabs, con una pasión por la
+              creación de soluciones digitales y una habilidad excepcional para
+              el desarrollo de aplicaciones web de alto rendimiento. Con una
+              sólida formación en desarrollo de software y una experiencia
+              demostrada en proyectos complejos, Alex es un miembro valioso de
+              nuestro equipo.
             </p>
           </div>
           <div className="flex flex-col items-center mx-10 mt-5 p-3 border border-main rounded-2xl">
@@ -76,10 +82,12 @@ export default function Home() {
               <span className="text-main">Posicion:</span> Desarollador Java
             </p>
             <p className="text-white">
-              <span className="text-main">Presentación:</span> Lorem ipsum dolor
-              sit amet, consectetur adipisicing elit. Numquam at maiores itaque
-              ullam ratione debitis aperiam reprehenderit est delectus quisquam
-              nihil iusto porro unde, culpa in fugit placeat eum atque.
+              <span className="text-main">Presentación:</span> Aaron es un
+              talentoso desarrollador Java en gLabs, con una amplia experiencia
+              y conocimientos en el desarrollo de aplicaciones empresariales
+              robustas y escalables. Su dominio de Java y su comprensión
+              profunda de los principios de programación orientada a objetos le
+              permiten crear soluciones eficientes y de alta calidad.
             </p>
           </div>
           <div className="flex flex-col items-center mx-10 mt-5 p-3 border border-main rounded-2xl">
@@ -97,10 +105,13 @@ export default function Home() {
               <span className="text-main">Posicion:</span> Ingeniero BBDD
             </p>
             <p className="text-white">
-              <span className="text-main">Presentación:</span> Lorem ipsum dolor
-              sit amet, consectetur adipisicing elit. Numquam at maiores itaque
-              ullam ratione debitis aperiam reprehenderit est delectus quisquam
-              nihil iusto porro unde, culpa in fugit placeat eum atque.
+              <span className="text-main">Presentación:</span> JChicano es un
+              talentoso ingeniero de bases de datos en gLabs, con una sólida
+              experiencia y conocimientos en el diseño, implementación y
+              administración de sistemas de bases de datos. Su experiencia
+              abarca una variedad de tecnologías de bases de datos, como Oracle,
+              MySQL y MongoDB, lo que le permite adaptarse a las necesidades y
+              requerimientos específicos de cada proyecto.
             </p>
           </div>
         </div>
