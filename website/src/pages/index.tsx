@@ -41,7 +41,7 @@ export default function Home() {
             <p className="text-white">ha legado</p>
           </div>
           <div className="sm:mt-10 md:ml-52 md:-mt-6">
-            <Image src={gif} alt="mark" height={600} className=""/>
+            <Image src={gif} alt="mark" height={500} className=""/>
           </div>
         </div>
       </main>
