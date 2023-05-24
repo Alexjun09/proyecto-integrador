@@ -38,7 +38,7 @@ export default function Home() {
             <p className="text-main">
               <i>Proyectos</i>
             </p>
-            <p className="text-white">ha legado</p>
+            <p className="text-white">ha llegado</p>
           </div>
           <div className="sm:mt-10 md:ml-46 md:-mt-6">
             <Image src={gif} alt="mark" height={500} className=""/>

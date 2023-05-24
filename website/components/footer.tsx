@@ -30,12 +30,6 @@ const Footer = () => {
             Quienes Somos
           </Link>
           <Link
-            href={"/tutorial"}
-            className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main hover:text-secondary"
-          >
-            Tutorial
-          </Link>
-          <Link
             href={"/contacto"}
             className="rounded-2xl px-2 hover:shadow-md hover:shadow-main hover:bg-main hover:text-secondary"
           >

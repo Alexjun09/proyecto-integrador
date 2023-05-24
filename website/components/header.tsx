@@ -36,9 +36,6 @@ const Header = () => {
                   <Link href={"/quienessomos"}>Quienes Somos</Link>
                 </li>
                 <li>
-                  <Link href={"/tutorial"}>Tutorial</Link>
-                </li>
-                <li>
                   <Link href={"/contacto"}>Contacto</Link>
                 </li>
                 <li>
@@ -62,13 +59,6 @@ const Header = () => {
                 Quienes Somos
               </button>
             </Link>
-
-            <Link href={"/tutorial"}>
-              <button className="hover:bg-main hover:text-secondary rounded-3xl px-3 h-12">
-                Tutorial{" "}
-              </button>
-            </Link>
-
             <Link href={"/contacto"}>
               <button className="hover:bg-main hover:text-secondary rounded-3xl px-3 h-12">
                 Contacto
