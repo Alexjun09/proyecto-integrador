@@ -20,9 +20,9 @@ export default function Home() {
         <link rel="icon" href="./favicon.ico" />
       </Head>
       <main className="">
-        <div className="flex sm:flex-col sm:my-10 md:flex-row md:mt-40 md:ml-40 md:mb-64">
-          <div className="flex flex-col gap-4 md:text-8xl sm:text-4xl sm:items-center md:items-start">
-            <p className="text-white">El futuro de las</p>
+        <div className="flex sm:flex-col sm:my-10 md:flex-row md:mt-40 md:ml-28 md:mb-64">
+          <div className="flex flex-col gap-4 md:text-7xl sm:text-4xl sm:items-center md:items-start">
+            <p className="text-white inline">El futuro de las</p>
             <p className="text-white">
               <span className="text-main">
                 <i>Aplicaciones</i>
@@ -40,7 +40,7 @@ export default function Home() {
             </p>
             <p className="text-white">ha legado</p>
           </div>
-          <div className="sm:mt-10 md:ml-52 md:-mt-6">
+          <div className="sm:mt-10 md:ml-46 md:-mt-6">
             <Image src={gif} alt="mark" height={500} className=""/>
           </div>
         </div>
